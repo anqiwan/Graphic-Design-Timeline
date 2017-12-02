@@ -1,0 +1,254 @@
+/*importing fonts*/
+
+@font-face {
+    font-family: portraitBold;
+    src: url("fonts/EksellDisplay-Large.otf");
+}
+
+@font-face {
+    font-family: maisonNeue;
+    src: url("fonts/MaisonNeue-Light.ttf");
+}
+
+@font-face {
+    font-family: maisonNeueBold;
+    src: url("fonts/MaisonNeue-Bold.ttf");
+}
+
+/*header and body*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5%;
+    z-index: 100;
+    text-align: center;
+    overflow: hidden;
+    background: rgba(255,255,255,100);
+}
+
+body {
+    background: #fff;
+}
+
+/* Setting type choices */
+h1 {
+    font-family: portraitBold;
+    color: #fff;
+    font-size: 4em;
+}
+
+/*creating dark class for fonts on lighter backgrounds*/
+.dark {
+    color: #000;
+}
+
+h2 {
+    font-family: portraitBold;
+    color: #000;
+    padding-top: .75em;
+    font-size: 1em; 
+}
+
+h3 {
+    font-family: portraitBold;
+    color: #fff;
+    font-size: 4em;   
+    text-align: center;
+}
+
+h4 {
+    font-family: maisonNeueBold;
+    font-size: 1em;  
+    color: #fff;
+}
+
+
+p {
+    font-family: maisonNeue;
+    color: #fff;
+    font-size: .8em;
+    width: 70%;  
+    align-content: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Creating navigation for bottom of the screen in footer */
+ul {
+    display: inline-block;
+    padding-top: .75em;
+}
+
+li {
+    display: inline-block;
+    font-family: portraitBold;
+    color: #000;
+    font-size: 1em; 
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.col-sm {
+    margin: .5em;
+    
+}
+
+/* creating caption styles*/
+.caption {
+    padding-top: 1em;
+    color: #fff;
+    font-size: .5em;    
+}
+
+/*creating dark alternative for captions*/
+.captiondark {
+    color: #000; 
+}
+
+/* Giving specifications to the rows*/
+#row1 {
+    padding-top: 18em;
+}
+
+#row2 {
+    padding-top: 2em;
+}
+
+
+/* Giving specifications to each section broken up by time period*/
+#intro {
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    background: hsl(0, 100%, 39%);
+    
+}
+
+#section1 {
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    background: hsl(0, 68%, 48%);    
+}
+
+#section2 {
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    background: hsl(0, 65%, 58%);  
+}
+
+#section3 {
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    background: hsl(0, 66%, 68%);   
+}
+
+#section4 {
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    background: hsl(0, 68%, 77%);   
+}
+
+#section5 {
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    background: hsl(0, 71%, 86%);   
+}
+
+#section6 {
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    background: hsl(0, 100%, 96%);   
+}
+
+/*creating a class for the drawing divs containing SVGs*/
+
+.drawing {
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+}
+
+/*setting up the progress bar on the bottom*/
+#progress {
+    position: fixed;
+	height:1%;
+	background:#444;
+	bottom:0;
+	z-index:150;
+}
+
+/* The filler makes the page long enough to scroll through all the sections*/
+#filler {
+    padding-top: 14000px;
+    
+}
+
+/*setting image size*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*creating the footer*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    z-index: 100;
+    text-align: center;
+    overflow: hidden;
+    background: rgba(255,255,255,100);
+}
+
+/*creating the years*/
+#links {
+    background: rgba(255,255,255,0);
+    z-index: 300;
+}
+
+
+.skrollr-desktop #scrollbar {display:none;}
+
+
+/* Making the site responsive on mobile */
+@media only screen and (max-width: 1200px) {
+    
+/* Turning off footer since it is not a desktop experience anymore*/
+    footer, .footer, #progress {
+        display: none;    
+    }
+    
+    #row1 {
+        padding-top: 3em;
+    } 
+    
+    #row2 {
+    padding-bottom: 2em;
+}
+    
+    col-sm {
+        display: block;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        border: #000 1px solid;
+    }    
+/*turning off drawings in mobile*/ 
+    #drawing {
+        display: none;
+}
+
+
+
+}

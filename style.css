@@ -1,0 +1,478 @@
+/*importing fonts*/
+
+@font-face {
+    font-family: noeBold;
+    src: url("fonts/noe-display-bold.ttf");
+}
+
+body {
+    background-color: #AE594E;
+}
+
+.col {
+    /*background-color: red;*/
+    margin: .5em;
+}
+
+
+.colsmall {
+    /*background-color: red;*/
+    margin: .1em;
+}
+
+#landingPage {
+    padding-top: 18em;
+}
+
+/* Setting the headers */
+
+h1 {
+    font-family: noeBold;
+    color: #fff;
+    font-size: 4em;
+    
+}
+
+p {
+    color: #fff;
+    font-size: .8em;
+    width: 70%;
+    
+}
+
+.colsmall p {
+    display:none;
+    color:#fff;
+}
+
+.colsmall:hover p {
+    margin: auto;
+    margin-top: 1em;
+    display:block;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+}
+
+.pagination {
+    top: 30vh;
+    position: fixed;
+    right: 0%;
+    display: block;
+    margin-right: 3em;
+    margin-left: 3em;
+    z-index:10;
+
+}
+
+.pagination a {
+    display: block;
+}
+
+
+.pagination li {
+    position: relative;
+    margin: 4em 0 0 0;
+    background: rgba(255,255,255,.5);
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    transition: all .2s ease;
+    overflow: hidden;
+    
+}
+
+button {
+    padding: 4px 12px 4px 12px;
+    margin: auto ;
+    background: none;
+    display: inline-block;
+    text-align:center;
+    font-family: noeBold;
+    font-size: 22px;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+
+}
+
+
+#active {
+/*    content: "";*/
+    width: 14px;
+    height: 14px;
+    background: rgba(255,255,255,1);
+/*    transform: translate(-50%,-50%);*/
+    transition: all .2s ease;
+    
+}
+
+.pagination li:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+    
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+
+/*    Making the P back to full width once the screen is small*/
+    p {
+        width: 100%;
+        }
+    }
+    
+
+
+
+    .section1 {
+        padding-top: 18em;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100vw;
+        height:100vh;
+        background:transparent center no-repeat;
+        background-size:cover;
+        background-color: hsl(251, 100%, 50%);
+        background-color: hsl(251, 100%, 50%);
+        cursor: crosshair;
+
+    }
+
+
+    #section2 {
+        padding-top: 18em;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100vw;
+        height:100vh;
+        background:transparent center no-repeat;
+        background-size:cover;
+        background-color: hsl(251, 100%, 50%);
+        background-blend-mode: multiply;
+        background:#AE594E;
+        background-image: url(img/a.png);
+        overflow:hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: hand;
+
+    }
+
+
+
+    #section25 {
+        padding-top: 10em;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100vw;
+        height:100vh;
+        background:transparent center no-repeat;
+        background-size:cover;
+        background-color: #AE594E;
+     
+        cursor: crosshair;
+        
+
+    }
+
+
+
+    #section3 {
+        padding-top: 18em;
+        position:fixed;
+        top:0;
+        left:0;
+       width: 100vw;
+        height:100vh;
+        background:transparent center no-repeat;
+        background-size:cover;
+        background-color: hsl(251, 100%, 50%);
+        background-blend-mode: multiply;
+        background:#000000;
+        overflow:hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+
+    #section4 {
+        position:fixed;
+        top:0;
+        left:0;
+       width: 100vw;
+        height:100vh;
+        background:transparent center no-repeat;
+        background-size:cover;
+        background-color: hsl(251, 100%, 50%);
+        background-blend-mode: multiply;
+        background:#000;
+
+        overflow:hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+      #section5 {
+
+        padding-left: 2em;
+
+
+        padding-top:10em;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100vw;
+        height:100vh;
+        background:transparent center no-repeat;
+       
+        background:#292929;
+
+        overflow:hidden;
+        background-size: cover;
+
+    }
+
+
+  
+.dotstyle {
+
+    top: 18vh;
+    position: fixed;
+    right: 0%;
+    display: block;
+    margin-right: 3em;
+    margin-left: 3em;
+    z-index:10;
+
+
+}
+
+.dotstyle ul {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dotstyle li {
+
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 16px;
+    margin: 4em 0 0 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.dotstyle li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-indent: -999em; /* make the text accessible to screen readers */
+    cursor: pointer;
+    position: absolute;
+}
+
+.dotstyle li a:focus {
+    outline: none;
+}
+
+
+.dotstyle:nth-child(4n),
+.dotstyle:nth-child(4n-3) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/* Scale up */
+
+.dotstyle-scaleup li a {
+    -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dotstyle-scaleup li a:hover,
+.dotstyle-scaleup li a:focus {
+    background-color: white;
+}
+
+.dotstyle-scaleup li.current a {
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+.inactive {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-indent: -999em; /* make the text accessible to screen readers */
+    cursor: pointer;
+    position: absolute;
+}
+
+.svgcontainer {
+    width: 50%;
+}
+
+/******tool image styling******/
+/*
+#img1-alt {
+    background-image: url(img/1-pantone.jpg);
+    background-size: 100%;
+    background-blend-mode: multiply; 
+
+}*/
+
+#img1-alt {
+    width: 90%;
+    mix-blend-mode: multiply; 
+    margin-top: -5em;
+}
+
+
+#img1 {
+    width: 80%;
+    mix-blend-mode: multiply; 
+    margin-top: -5em;
+}
+
+#img2 {
+    width: 100%;
+    mix-blend-mode: multiply; 
+
+}
+#img3 {
+    width: 120%;
+    mix-blend-mode: multiply; 
+    margin-top: -3em;
+
+}
+#img4 {
+    width: 90%;
+    mix-blend-mode: multiply; 
+
+}
+#img5 {
+    width: 90%;
+    mix-blend-mode: multiply; 
+
+}
+#img6 {
+    width: 90%;
+    mix-blend-mode: multiply; 
+
+}
+#img7 {
+    width: 90%;
+    mix-blend-mode: multiply; 
+    margin-top: -2em;
+}
+
+
+#img9 {
+    width: 100%;
+    mix-blend-mode: multiply; 
+    margin-top: -5em;
+
+}
+
+#row3 {
+    position: relative;
+}
+
+.drawing {
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+
+}
+
+/*row containing buttons*/
+#buttonrow {
+    padding-top: 2em;
+}
+
+/*h2 class for transition text*/
+.transition {
+    padding: 4px 12px 4px 12px;
+    margin: auto ;
+    background: none;
+    display: inline-block;
+    text-align:center;
+    font-family: noeBold;
+    font-size: 22px;
+    color: #00ff00;
+
+}
+
+#artifact1 {
+    width: 80%;
+
+
+}
+
+#artifact2 {
+    width: 50%;
+
+}
+
+
+#artifact3 {
+    width: 50%;
+
+
+}
+
+#artifact4 {
+    width: 40%;
+    
+}
+
+#artifact5 {
+    width: 30%;
+
+}
+
+#artifact6 {
+    width: 50%;
+    
+}
+
+#artifact7 {
+    width: 50%;
+    
+}
+
+#row1 {
+    max-height = 20vh;
+}
