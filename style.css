@@ -1,22 +1,26 @@
 /*importing fonts*/
 
 @font-face {
-    font-family: noeBold;
-    src: url("fonts/noe-display-bold.ttf");
+    font-family: portraitBold;
+    src: url("fonts/EksellDisplay-Large.otf");
 }
+
+@font-face {
+    font-family: maisonNeue;
+    src: url("fonts/MaisonNeue-Light.ttf");
+}
+
 
 body {
     background-color: #AE594E;
 }
 
 .col {
-    /*background-color: red;*/
     margin: .5em;
 }
 
-
+/*small columns for images.*/
 .colsmall {
-    /*background-color: red;*/
     margin: .1em;
 }
 
@@ -27,103 +31,65 @@ body {
 /* Setting the headers */
 
 h1 {
-    font-family: noeBold;
+    font-family: portraitBold;
     color: #fff;
     font-size: 4em;
     
 }
 
 p {
+    font-family: maisonNeue;
     color: #fff;
     font-size: .8em;
     width: 70%;
     
 }
 
+/*for hover labels for analog tools section*/
 .colsmall p {
-    display:none;
+    display:block;
     color:#fff;
-}
-
-.colsmall:hover p {
+    opacity: 0;
     margin: auto;
     margin-top: 1em;
-    display:block;
     color:#fff;
     border: 1px solid #fff;
     padding: 2px 2px 2px 2px;
     text-align: center;
 }
 
-.pagination {
-    top: 30vh;
-    position: fixed;
-    right: 0%;
-    display: block;
-    margin-right: 3em;
-    margin-left: 3em;
-    z-index:10;
-
-}
-
-.pagination a {
-    display: block;
-}
-
-
-.pagination li {
-    position: relative;
-    margin: 4em 0 0 0;
-    background: rgba(255,255,255,.5);
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
-    transition: all .2s ease;
-    overflow: hidden;
+.colsmall:hover p {
+    opacity: 1;
     
 }
 
 button {
     padding: 4px 12px 4px 12px;
     margin: auto ;
+    margin-left: 3em;
     background: none;
     display: inline-block;
     text-align:center;
-    font-family: noeBold;
+    font-family: portraitBold;
     font-size: 22px;
     border: 2px solid #00ff00;
     color: #00ff00;
-
 }
 
 
 #active {
-/*    content: "";*/
     width: 14px;
     height: 14px;
     background: rgba(255,255,255,1);
-/*    transform: translate(-50%,-50%);*/
-    transition: all .2s ease;
-    
+    transition: all .2s ease;  
 }
 
-.pagination li:hover {
-    transform: scale(2);
-    cursor: pointer;
-}
-    
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-
-/*    Making the P back to full width once the screen is small*/
-    p {
-        width: 100%;
-        }
-    }
     
 
 
+    
+
+/*define each container section*/
 
     .section1 {
         padding-top: 18em;
@@ -157,11 +123,8 @@ button {
         overflow:hidden;
         background-repeat: no-repeat;
         background-size: cover;
-        cursor: hand;
-
+        cursor: crosshair;
     }
-
-
 
     #section25 {
         padding-top: 10em;
@@ -173,12 +136,8 @@ button {
         background:transparent center no-repeat;
         background-size:cover;
         background-color: #AE594E;
-     
-        cursor: crosshair;
-        
-
+        cursor: crosshair;    
     }
-
 
 
     #section3 {
@@ -186,7 +145,7 @@ button {
         position:fixed;
         top:0;
         left:0;
-       width: 100vw;
+        width: 100vw;
         height:100vh;
         background:transparent center no-repeat;
         background-size:cover;
@@ -196,9 +155,10 @@ button {
         overflow:hidden;
         background-repeat: no-repeat;
         background-size: cover;
+        cursor: crosshair;
+        
 
     }
-
 
 
     #section4 {
@@ -212,10 +172,10 @@ button {
         background-color: hsl(251, 100%, 50%);
         background-blend-mode: multiply;
         background:#000;
-
         overflow:hidden;
         background-repeat: no-repeat;
         background-size: cover;
+        cursor: crosshair;
 
     }
 
@@ -231,15 +191,15 @@ button {
         width: 100vw;
         height:100vh;
         background:transparent center no-repeat;
-       
         background:#292929;
-
         overflow:hidden;
         background-size: cover;
+        cursor: crosshair;
 
     }
 
-
+/*dotstyle css adapted from 
+https://github.com/codrops/DotNavigationStyles*/
   
 .dotstyle {
 
@@ -325,7 +285,6 @@ button {
 }
 
 
-
 .inactive {
     top: 0;
     left: 0;
@@ -340,18 +299,9 @@ button {
     position: absolute;
 }
 
-.svgcontainer {
-    width: 50%;
-}
+
 
 /******tool image styling******/
-/*
-#img1-alt {
-    background-image: url(img/1-pantone.jpg);
-    background-size: 100%;
-    background-blend-mode: multiply; 
-
-}*/
 
 #img1-alt {
     width: 90%;
@@ -429,50 +379,71 @@ button {
     background: none;
     display: inline-block;
     text-align:center;
-    font-family: noeBold;
+    font-family: portraitBold;
     font-size: 22px;
     color: #00ff00;
 
 }
 
+/******computer artifact styling******/
+
 #artifact1 {
     width: 80%;
-
-
 }
 
 #artifact2 {
     width: 50%;
-
 }
 
 
 #artifact3 {
     width: 50%;
-
-
 }
 
 #artifact4 {
-    width: 40%;
-    
+    width: 40%;  
 }
 
 #artifact5 {
-    width: 30%;
-
+    width: 60%;
 }
 
 #artifact6 {
-    width: 50%;
-    
+    width: 70%; 
+  
 }
 
 #artifact7 {
-    width: 50%;
-    
+    width: 50%;   
 }
 
-#row1 {
-    max-height = 20vh;
-}
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+/*adjustments for mobile*/
+@media only screen and (max-width: 480px) {
+
+/*    Making the P back to full width once the screen is small*/
+    p {
+        width: 85%;
+        margin-right: 1em;
+        }
+    
+    .colsmall:hover p {
+        margin-top: 1em;
+        display:block;
+        padding: 10px 20px 10px 10px;
+        text-align: center;
+    }
+    
+    button {
+        margin: auto ;
+        margin-left: -1em;
+        font-size: 20px;
+
+    }
+/*    center winking girl*/
+    .drawing {
+        margin-top: 30vh;
+        margin-left: -1em;
+    }
+ }
+

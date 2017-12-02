@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<!--    HEAD // Here we are linking our stylesheets and javascript for the page-->
+<!--    HEAD // linking jquery, bootstrap, js for the page-->
 <head>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 
@@ -23,7 +23,7 @@
  <!--    Naming the Site-->
  <title>How Technology Has Changed Graphic Design</title>  
      <!--    favicon-->
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 
@@ -34,16 +34,14 @@
         <!-- ######################## Nav ###############################-->
         <div class="dotstyle dotstyle-scaleup">
 
-            <!-- dot transitions for scrolling -->
-
+            <!-- dot transitions as you scroll -->
             <ul id = "dots">
-               <!--  class="current" -->
                <li  data-anchor-target="#section2"
                data--50-center-bottom="opacity: 0.2; transform:scale(0.9);"
                data--50-center-top="opacity: 1;transform:scale(1.1);"
                data-50-center-bottom="opacity: 1;transform:scale(1.1);"
                data-50-center-top="opacity: 0.2; transform:scale(0.9);">
-               <a href="#">Home</a> </li>
+               <a href="#">0</a> </li>
                <li 
                data-100p="opacity: 0.2; transform:scale(0.9);"
                data-150p= "opacity:1;transform:scale(1.1);"
@@ -56,32 +54,32 @@
                data-350p= "opacity:1;transform:scale(1.1);"
                data-450p= "opacity:1; transform:scale(1.1);"
                data-600p="opacity: 0.2; transform:scale(0.9);"
-               ><a href="#section3">2</a></li>
+               ><a href="#section25">2</a></li>
                <li
                data-650p="opacity: 0.2; transform:scale(0.9);"
                data-750p= "opacity:1;transform:scale(1.1);"
                data-900p= "opacity:1; transform:scale(1.1);"
                data-1050p="opacity: 0.2; transform:scale(0.9);"
 
-               ><a href="#section4">3</a></li>
+               ><a href="#section3">3</a></li>
                <li
                data-900p="opacity: 0.2; transform:scale(0.9);"
                data-1050p= "opacity:1;transform:scale(1.1);"
                data-1200p= "opacity:1; transform:scale(1.1);"
                data-1350p="opacity: 0.2; transform:scale(0.9);"
-               ><a href="#">4</a></li>
+               ><a href="#section4">4</a></li>
                <li
                data-1200p="opacity: 0.2; transform:scale(0.9);"
                data-1350p= "opacity:1;transform:scale(1.1);"
      
 
-               ><a href="#">5</a></li>
+               ><a href="#section5">5</a></li>
            </ul>
            <!-- ######################## end Nav ###############################-->
         </div>
        
 
-       <!--    Creating the landing page div-->
+     <!--    SECTION 1: landing/intro-->
     <div class="container-fluid section1" data-0="top:0%;" data-50p="" data-150p="top:-100%;">
       <!--  Placing the header-->
       <div class="row">
@@ -109,8 +107,13 @@
       </div>
     </div>
 
-
-    <div class = "container-fluid" id = "section2" data-50p="top:100%; opacity:.1;" data-150p="top:0%; opacity:1" data-250p= " " data-300p= "opacity:0"  data-450p="top:-100%;">
+    <!--    SECTION 2: intro to analog graphic design tools-->
+    <div class = "container-fluid" id = "section2" 
+      data-50p="top:100%; opacity:.1;" 
+      data-150p="top:0%; opacity:1" 
+      data-250p= " " 
+      data-300p= "opacity:0"  
+      data-450p="top:-100%;">
 
       <!--  empty div for animations-->
       <div data-175p="opacity:0" data-225p= "opacity:1" data-350p= "opacity:1" data-400p= "opacity:0"> 
@@ -142,9 +145,14 @@
 
       </div>
     </div>
-
-
-    <div class = "container-fluid" id = "section25" data-300p="top:0%; opacity:0;" data-350p="top:0%; opacity:1" data-600p= ""  data-650p = "" data-750p="top:-100%;">
+    
+<!--    SECTION 2.5: animated graphic design tools + names -->
+    <div class = "container-fluid" id = "section25" 
+    data-300p="top:0%; opacity:0;" 
+    data-350p="top:0%; opacity:1" 
+    data-600p= ""  
+    data-650p = "" 
+    data-750p="top:-100%;">
 
 
         <div class="row" >
@@ -158,7 +166,9 @@
                 data-3600="transform:rotate(0deg) scale(1);"    
                 data-4100="transform:rotate(80deg) scale(1.5); transform-origin: 600px 300px; opacity:1" 
                 data-4200="opacity:0" >
-                <div class="label"> <p> Pantone Swatches </p> </div>
+                <div class="label" 
+                data-3600=" opacity:1" 
+                data-3650="opacity:0" > <p> Pantone Swatches </p> </div>
             </div>
 
             <div class="col colsmall">
@@ -166,7 +176,8 @@
               data-3600="transform:rotate(0deg) scale(1);"    
               data-4100="transform:rotate(-80deg) scale(1.5); transform-origin: 600px -300px;opacity:1" 
               data-4200="opacity:0">
-              <div class="label"> <p> Contact Paper </p> </div>
+              <div class="label"  data-3600=" opacity:1" 
+                data-3650="opacity:0" > <p> Contact Paper </p> </div>
 
             </div>
 
@@ -175,7 +186,8 @@
                data-3600="transform:rotate(0deg) scale(1);"    
                data-4100="transform:rotate(80deg) scale(1.5); transform-origin: 600px 0px;opacity:1" 
               data-4200="opacity:0">
-              <div class="label"> <p> Pencil Compass </p> </div>
+              <div class="label"  data-3600=" opacity:1" 
+                data-3650="opacity:0" > <p> Pencil Compass </p> </div>
 
             </div>
 
@@ -187,16 +199,14 @@
       <div class="row"  >
           <div class="col colsmall">
 
-
           </div>
           <div class="col colsmall">
             <img src=" img/4-curve.jpg" alt="" id="img4" 
             data-3600="transform:rotate(0deg) scale(1);"  
             data-4100="transform:rotate(-30deg) scale(1.5); transform-origin: 600px 800px;opacity:1" 
             data-4200="opacity:0">
-            <div class="label"> <p> Mermaid curve</p> </div>
-            
-
+            <div class="label" data-3600=" opacity:1" 
+                data-3650="opacity:0" > <p> Mermaid curve</p> </div>
             
           </div>
           <div class="col colsmall">
@@ -204,7 +214,8 @@
             data-3620="transform:rotate(0deg) translate(0px) scale(1);"  
             data-4150="transform:rotate(-40deg) translate(-50px) scale (1.5); transform-origin: 800px 500px;opacity:1" 
             data-4200="opacity:0">
-            <div class="label"> <p> Rubber Eraser </p> </div>
+            <div class="label" data-3600=" opacity:1" 
+                data-3650="opacity:0" > <p> Rubber Eraser </p> </div>
 
           </div>
 
@@ -213,7 +224,8 @@
             data-3650="transform:rotate(0deg) translate(0px) scale(1) ;"    
             data-4150="transform:rotate(80deg) translate(40px) scale(1.5); transform-origin: 600px 300px; opacity:1" 
             data-4200="opacity:0">
-            <div class="label"> <p> Circle Template </p> </div>
+            <div class="label" data-3600=" opacity:1" 
+                data-3650="opacity:0" > <p> Circle Template </p> </div>
 
           </div>
           <div class="col colsmall">
@@ -221,12 +233,11 @@
             data-3600="transform:rotate(0deg) translate(0px) scale(1);"  
             data-4100="transform:rotate(60deg) translate(20px) scale (1.5); transform-origin: -600px 300px; opacity:1" 
             data-4200="opacity:0">
-            <div class="label"> <p> Letraset stickers</p> </div>
+            <div class="label" data-3600=" opacity:1" 
+                data-3650="opacity:0" > <p> Letraset stickers</p> </div>
 
           </div>
           <div class="col colsmall">
-
-
           </div>
       </div>
       <div class="row" id= "row3" >
@@ -240,14 +251,16 @@
             data-3625="transform:rotate(0deg) scale(1);"  
             data-4150="transform:rotate(-80deg) scale(1.5); transform-origin: 600px 300px; opacity:1" 
             data-4200="opacity:0">
-            <div class="label"> <p> X-Acto knives </p> </div>
+            <div class="label" data-3600=" opacity:1" 
+                data-3650="opacity:0" > <p> X-Acto knives </p> </div>
           </div>
           <div class="col colsmall">
             <img src=" img/9-ruler.jpg" alt="" id="img9" 
             data-3600="transform:rotate(0deg) translate(0px) scale(1);"  
             data-4100="transform:rotate(-80deg)translate(-220px) scale(1.5); transform-origin: 600px 300px; opacity:1" 
             data-4200="opacity:0" >
-            <div class="label"> <p> Ruler</p> </div>
+            <div class="label" data-3600=" opacity:1" 
+                data-3650="opacity:0" > <p> Ruler</p> </div>
           </div>        
           <div class="col colsmall">
           </div>
@@ -255,8 +268,8 @@
           </div>
       </div>
     </div>
-
-
+    
+<!--    SECTION 3: Sketchpad intro -->
     <div class = "container-fluid" id = "section3" 
     data-650p="top:100%; opacity:.1;" 
     data-750p="top:0%; opacity:1" 
@@ -288,12 +301,17 @@
         </div>
       </div>
     </div>
-
-
-    <div class = "container-fluid" id = "section4" data-900p="top:100%; opacity:.1;" data-1050p="top:0%; opacity:1" data-1200p="top:0%; opacity:1"  data-1350p="top:-100%;">
-         
     
+<!--    SECTION 4: Winking girl container-->
+
+    <div class = "container-fluid" id = "section4" 
+    data-900p="top:100%; opacity:.1;" 
+    data-1050p="top:0%; opacity:1" 
+    data-1200p="top:0%; opacity:1"  
+    data-1350p="top:-100%;">
     </div>
+    
+<!--    SECTION 5: old computer artifacts + link to timeline-->
 
     <div class = "container-fluid" id = "section5" 
     data-1200p="top:100%; opacity:.1;" 
@@ -307,7 +325,6 @@
 
             <div class="col colsmall" >
                 <img src=" img/artifact1.gif" alt=""  id="artifact1" 
-
                 data-11000="transform:rotate(100deg) translate(-40px) scale(.8); opacity:0;"    
                 data-11100 = "opacity:1"
                 data-11800="transform:rotate(-8deg) translate(0px)  scale(1); transform-origin: 300px 800px; opacity:1" >
@@ -316,23 +333,17 @@
 
             <div class="col colsmall">
               <img src=" img/artifact2.png" alt="" id="artifact2" 
-            
                 data-11000="transform:rotate(-100deg) scale(.8);"    
                 data-11800="transform:rotate(0deg) scale(1); transform-origin: 600px -300px; opacity:1" >
-          
-
             </div>
 
             <div class="col colsmall">
                <img src=" img/artifact3.png" alt="" id="artifact3" 
-
                 data-11000="transform:rotate(80deg) translate(0px, 0px) scale(.8);"    
                 data-11800="transform:rotate(3deg) translate(0px, 10px) scale(1); transform-origin: 600px 0px; opacity:1" >
-
             </div>
             
             <div class="col colsmall">
-
             </div>
         </div>
       
@@ -365,132 +376,125 @@
       <div class="row" >
           <!-- ################## images of old computers, are each animated on different paths ##########################-->
             <div class="col colsmall">
-
             </div>
 
             <div class="col colsmall" >
-                <img src=" img/artifact5.jpg" alt=""  id="artifact1" 
+                <img src=" img/artifact5.jpg" alt=""  id="artifact5" 
           
                 data-11000="transform:rotate(-40deg) scale(.8);"    
                 data-11800="transform:rotate(-3deg) scale(1); transform-origin: 800px 500px; opacity:1" >
-
-              
             </div>
 
             <div class="col colsmall">
-              <img src=" img/artifact6.png" alt="" id="artifact2" 
+              <img src=" img/artifact6.png" alt="" id="artifact6" 
             
               data-11000="transform:rotate(100deg) scale(.8);"    
-                data-11800="transform:rotate(0deg) scale(1); transform-origin: 600px 300px; opacity:1" >
+                data-11800="transform:rotate(-12deg) scale(1); transform-origin: 600px 300px; opacity:1" >
           
-
             </div>
 
             <div class="col colsmall">
-               <img src=" img/artifact7.ico" alt="" id="artifact3" 
+               <img src=" img/artifact7.ico" alt="" id="artifact7" 
               data-11000="transform:rotate(-80deg) scale(.8);"    
-                data-11800="transform:rotate(-10deg) scale(1); transform-origin: 600px 300px; opacity:1" >
-
+                data-11800="transform:rotate(12deg) scale(1); transform-origin: 600px 300px; opacity:1" >
             </div>
             
             <div class="col colsmall">
 
             </div>
         </div>
-      
-
-
-
-    
     </div>
-        <!--   winking girl svg -->
-        <div class="drawing "data-900p="top:100%;" data-1050p="top:0%;" data-1200p="top:0%; "  data-1350p="top:-100%;"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 1392.545 1080" style="enable-background:new 0 0 1392.545 1080;" xml:space="preserve">
-          <g id="face"  >
-            
-              <image style="display:none;overflow:visible;" width="496" height="594" xlink:href="../pui materials/winking_girl.jpg"  transform="matrix(1.3519 0 0 1.3519 392 121)">
-            </image>
+       
+       
+    <!--   winking girl svg animation-->
+    <div class="drawing"
+        data-900p="top:100%;" 
+        data-1050p="top:0%;" 
+        data-1200p="top:0%; "  
+        data-1350p="top:-100%;"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 1392.545 1080" style="enable-background:new 0 0 1392.545 1080;" xml:space="preserve">
+      <g id="face"  >
 
-            <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10; stroke-dasharray:6000;stroke-dashoffset:0"
-                  data-8000="stroke-dashoffset:6000;" data-11000="stroke-dashoffset:0;" d="M969.5,225.5c0,0-24-75-83-78s-299,0-299,0
-              s-77.489-1.507-94,86c-10,53-53,365-53,365s115,45,205,0 "/>
-            <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10; stroke-dasharray:6000;stroke-dashoffset:0"
-                  data-8000="stroke-dashoffset:6000;" data-11000="stroke-dashoffset:0;" d="M969.5,227.5l45,379c0,0-129,36-209-7"/>
+          <image style="display:none;overflow:visible;" width="496" height="594" xlink:href="../pui materials/winking_girl.jpg"  transform="matrix(1.3519 0 0 1.3519 392 121)">
+        </image>
 
-            <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10; stroke-dasharray:6000;stroke-dashoffset:0"
-                  data-8000="stroke-dashoffset:6000;" data-8500="stroke-dashoffset:0;" d="M899,251H757l-26,34l-26-34H562
-              c0,0-87,236,165,265c0,0,244.448-11.877,176-260"/>
+        <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10; stroke-dasharray:6000;stroke-dashoffset:0"
+              data-8000="stroke-dashoffset:6000;" data-11000="stroke-dashoffset:0;" d="M969.5,225.5c0,0-24-75-83-78s-299,0-299,0
+          s-77.489-1.507-94,86c-10,53-53,365-53,365s115,45,205,0 "/>
+        <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10; stroke-dasharray:6000;stroke-dashoffset:0"
+              data-8000="stroke-dashoffset:6000;" data-11000="stroke-dashoffset:0;" d="M969.5,227.5l45,379c0,0-129,36-209-7"/>
 
+        <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10; stroke-dasharray:6000;stroke-dashoffset:0"
+              data-8000="stroke-dashoffset:6000;" data-8500="stroke-dashoffset:0;" d="M899,251H757l-26,34l-26-34H562
+          c0,0-87,236,165,265c0,0,244.448-11.877,176-260"/>
+
+        <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
+              data-8000="stroke-dashoffset:6000;" data-11000="stroke-dashoffset:0;" d="M631.266,488.495C631.266,488.495,614,610,713,614
+          c94.923,3.835,128-63,113.046-125.505"/>
+
+          <!-- left eye -->
+          <g id ="lefteye" data-8000="opacity:1;"  data-8100="opacity:1; -transform-origin: 0 0;" data-9050="opacity:1;">
             <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                  data-8000="stroke-dashoffset:6000;" data-11000="stroke-dashoffset:0;" d="M631.266,488.495C631.266,488.495,614,610,713,614
-              c94.923,3.835,128-63,113.046-125.505"/>
-
-              <!-- left eye -->
-              <g id ="lefteye" data-8000="opacity:0;"  data-8100="opacity:1; -transform-origin: 0 0;" data-9050="opacity:1;">
-                <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                      data-8000"stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M607,346h65c0,0-2-33-33-33
-                  C613,313,607,346,607,346"/>
-                <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                      data-8000"stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M639,333c0-4.418,3.582-8,8-8s8,3.582,8,8
-                  s-3.582,8-8,8S639,337.418,639,333"/>
-              </g>
-
-           <!--    right eye -->
-             <g id ="righteye" data-8000="opacity:0;"  data-8100="opacity:1; -transform-origin: 0 0;" data-8300="opacity:1;" data-9020="opacity:1;" data-9050="opacity:0;">
-                <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                      data-8000"stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M795,346h65c0,0-2-33-33-33
-                  C801,313,795,346,795,346"/>
-                <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                      data-8000"stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M827,333c0-4.418,3.582-8,8-8s8,3.582,8,8
-                  s-3.582,8-8,8S827,337.418,827,333"/>
-            </g>
-
-            <g id ="features" data-8000="opacity:0;"  data-8100="opacity:1; -transform-origin: 0 0;" data-9050="opacity:1;">
-              
-              <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                    data-8000"stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M614,296c0,0,24-8,46,0"/>
-              <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                    data-8000"stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M801.005,296.058c0,0,23.98-8.061,46-0.117"/>
-              <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                    data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M709,384c0,0,5-19,21-19s20,11,20,19"/>
-              <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                    data-8000"stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M674,452c0,0,50,23,99,3"/>
-              <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
-                    data-8000"stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M851,358"/>
-
-            </g>
-
-
+                  data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M607,346h65c0,0-2-33-33-33
+              C613,313,607,346,607,346"/>
+            <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
+                  data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M639,333c0-4.418,3.582-8,8-8s8,3.582,8,8
+              s-3.582,8-8,8S639,337.418,639,333"/>
           </g>
 
-         <!--  closed eye animation -->
+       <!--    right eye -->
+         <g id ="righteye" data-8000="opacity:1;"  data-8100="opacity:1; -transform-origin: 0 0;" data-8300="opacity:1;" data-9020="opacity:1;" data-9050="opacity:0;">
+            <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
+                  data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M795,346h65c0,0-2-33-33-33
+              C801,313,795,346,795,346"/>
+            <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
+                  data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M827,333c0-4.418,3.582-8,8-8s8,3.582,8,8
+              s-3.582,8-8,8S827,337.418,827,333"/>
+        </g>
 
-          <g id="blink" data-9040="opacity:0;" data-9055="opacity:1;"  >
-            <g>
-              <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="860" y1="346" x2="795" y2="346" data-1050="opacity:1;" />
-              
-                <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="790.539" y1="357.258" x2="798.539" y2="346.258"/>
-              
-                <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="796.539" y1="357.258" x2="804.539" y2="346.258"/>
-              
-                <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="804.539" y1="357.258" x2="812.539" y2="346.258"/>
-              
-                <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="813.539" y1="357.258" x2="821.539" y2="346.258"/>
-              
-                <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="825.539" y1="357.258" x2="833.539" y2="346.258"/>
-              
-                <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="835.539" y1="357.258" x2="843.539" y2="346.258"/>
-              
-                <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="845.539" y1="357.258" x2="853.539" y2="346.258"/>
-              
-                <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="851.539" y1="357.258" x2="859.539" y2="346.258"/>
-            </g>
-          </g>
-          </svg>
-    </div>
-    
+        <g id ="features" data-8000="opacity:1;"  data-8100="opacity:1; -transform-origin: 0 0;" data-9050="opacity:1;">
+
+          <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
+                data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M614,296c0,0,24-8,46,0"/>
+          <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
+                data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M801.005,296.058c0,0,23.98-8.061,46-0.117"/>
+          <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
+                data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M709,384c0,0,5-19,21-19s20,11,20,19"/>
+          <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
+                data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M674,452c0,0,50,23,99,3"/>
+          <path style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6000;stroke-dashoffset:0"
+                data-8000="stroke-dashoffset:6000;" data-10000="stroke-dashoffset:0;" d="M851,358"/>
+
+        </g>
 
 
+      </g>
+
+     <!--  closed eye animation -->
+
+      <g id="blink" data-9040="opacity:0;" data-9055="opacity:1;"  >
+        <g>
+          <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="860" y1="346" x2="795" y2="346" data-1050="opacity:1;" />
+
+            <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="790.539" y1="357.258" x2="798.539" y2="346.258"/>
+
+            <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="796.539" y1="357.258" x2="804.539" y2="346.258"/>
+
+            <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="804.539" y1="357.258" x2="812.539" y2="346.258"/>
+
+            <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="813.539" y1="357.258" x2="821.539" y2="346.258"/>
+
+            <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="825.539" y1="357.258" x2="833.539" y2="346.258"/>
+
+            <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="835.539" y1="357.258" x2="843.539" y2="346.258"/>
+
+            <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="845.539" y1="357.258" x2="853.539" y2="346.258"/>
+
+            <line style="fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;" x1="851.539" y1="357.258" x2="859.539" y2="346.258"/>
+        </g>
+      </g>
+      </svg>
+</div>
   </div>
 
 
@@ -503,12 +507,10 @@
 <script type="text/javascript">
 setTimeout(function() {
     var s = skrollr.init({
-            //forceHeight: false
         });
 
     skrollr.menu.init(s, {
         change: function(hash, top) {
-                //console.log(hash, top);
             }
         });
 }, 500);

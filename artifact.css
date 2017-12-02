@@ -220,7 +220,7 @@ img {
 
 
 /* Making the site responsive on mobile */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 480px) {
     
 /* Turning off footer since it is not a desktop experience anymore*/
     footer, .footer, #progress {
